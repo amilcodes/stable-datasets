@@ -68,10 +68,16 @@ params:
   imagenette:
     batch_size: 128
     max_epochs: 150
+  cinic10:
+    batch_size: 128
+    max_epochs: 100
 
   # ----- new datasets (auto-inserted, paper tier rule) -----
   # 1× ImageNet base
   imagenet100:
+    batch_size: 256
+    max_epochs: 50
+  patchcamelyon:
     batch_size: 256
     max_epochs: 50
   # Medium-simple — ×3

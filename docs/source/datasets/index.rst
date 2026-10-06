@@ -50,11 +50,13 @@ Available Datasets
    cifar100
    cifar10_c
    cifar100_c
+   cinic10
    cars196
    dtd
    fashion_mnist
    k_mnist
    medmnist
+   patch_camelyon
    awa2
    beans
    stl10
