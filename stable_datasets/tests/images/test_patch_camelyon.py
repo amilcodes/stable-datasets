@@ -4,7 +4,6 @@ import io
 import h5py
 import numpy as np
 import pandas as pd
-import pytest
 from PIL import Image
 
 import stable_datasets.images.patch_camelyon as patch_camelyon
@@ -88,7 +87,6 @@ def test_patch_camelyon_builds_splits_from_release_files(tmp_path, monkeypatch):
     assert len(PatchCamelyon(split="test", **cache_kwargs)) == 2
 
 
-@pytest.mark.large
 def test_patch_camelyon_dataset():
     train = PatchCamelyon(split="train")
     assert len(train) == 262144, f"Expected 262144 training samples, got {len(train)}."

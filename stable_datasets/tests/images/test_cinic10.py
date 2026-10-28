@@ -2,7 +2,6 @@ import io
 import tarfile
 
 import numpy as np
-import pytest
 from PIL import Image
 
 import stable_datasets.utils as utils
@@ -57,7 +56,6 @@ def test_cinic10_parses_archive_layout(tmp_path, monkeypatch):
     assert sorted(ds["test"][i]["origin"] for i in range(2)) == [0, 1]
 
 
-@pytest.mark.large
 def test_cinic10_dataset():
     train = CINIC10(split="train")
     assert len(train) == 90000, f"Expected 90000 training samples, got {len(train)}."
