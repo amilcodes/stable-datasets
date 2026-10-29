@@ -46,6 +46,7 @@ Available Datasets
 
    arabic_characters
    arabic_digits
+   caltech256
    cifar10
    cifar100
    cifar10_c
@@ -64,9 +65,13 @@ Available Datasets
    stl10
    tiny_imagenet
    tiny_imagenet_c
+   imagenet_a
+   imagenet_r
    e_mnist
    fgvc_aircraft
+   flowers17
    flowers102
+   imagewoof
    food101
    cub200
    country211
@@ -76,6 +81,10 @@ Available Datasets
    rock_paper_scissor
    svhn
    linnaeus5
+   stanford40
+   usps
+   oxford_iiit_pet
+   eurosat
 
 .. toctree::
    :maxdepth: 1
